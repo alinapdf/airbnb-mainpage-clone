@@ -1,0 +1,67 @@
+@import "./reset.scss";
+@import "./vars.scss";
+
+.main__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px 24px;
+}
+
+.footer {
+  border-top: 1px solid #ebebeb;
+  padding: 15px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__wrapper-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  padding-left: 7px;
+}
+
+.footer__links a {
+  color: #222;
+  display: flex;
+  gap: 6px;
+  position: relative;
+  padding-left: 7px;
+}
+
+.footer__links a::before {
+  content: "";
+  width: 1px;
+  height: 1px;
+  background-color: #222;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__actions-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

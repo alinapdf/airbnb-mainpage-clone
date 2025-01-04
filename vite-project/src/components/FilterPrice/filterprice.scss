@@ -1,0 +1,79 @@
+.filterPrice {
+  margin-bottom: 24px;
+}
+
+.filterPrice .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterPrice-wrapper {
+  min-width: 628px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  gap: 10px;
+}
+
+.filterPrice_options {
+  display: flex;
+  font-weight: 600;
+  font-size: 15px;
+  color: #717171;
+  transition: all 0.5s ease;
+}
+
+.filterPrice_options-item.active {
+  color: #222;
+}
+
+.filterPrice_options-item {
+  padding-right: 22px;
+  border-right: 1px solid #ddd;
+  transition: all 0.5s ease;
+}
+
+.filterPrice_options-item:last-child {
+  padding-right: none;
+  border-right: none;
+}
+
+.filterPrice_options-item:not(:first-child) {
+  padding-left: 17px;
+}
+
+.filterPrice_btn {
+  background-color: #b0b0b0;
+  width: 48px;
+  height: 32px;
+  border-radius: 32px;
+  position: relative;
+  transition: background-color 0.5s ease;
+}
+
+.filterPrice_btn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 2px solid #b0b0b0;
+  position: absolute;
+  left: 2px; /* Указываем смещение для начального состояния */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.5s ease, border-color 0.5s ease;
+}
+
+.filterPrice_btn.active {
+  background-color: #ff385c;
+}
+
+.filterPrice_btn.active::after {
+  left: calc(100% - 30.5px); /* Смещение к правой стороне */
+  border-color: #ff385c;
+}

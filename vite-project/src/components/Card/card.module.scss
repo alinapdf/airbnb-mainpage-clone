@@ -1,0 +1,79 @@
+.img {
+  margin-bottom: 12px;
+  border-radius: 12px;
+  width: 100%;
+  height: 286px;
+  aspect-ratio: 302/286;
+  object-fit: cover;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.27;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.27;
+  text-align: right;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.27;
+  color: #717171;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.46;
+  color: #717171;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.27;
+  margin-top: 8px;
+}
+
+.strong {
+  font-weight: 800;
+}
+
+.descWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.card {
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.5s ease;
+  }
+}
+
+.link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

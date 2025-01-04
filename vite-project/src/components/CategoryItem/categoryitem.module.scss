@@ -1,0 +1,22 @@
+.categoryItem {
+  min-width: 56px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryImg {
+  margin-bottom: 8px;
+}
+
+.categoryTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: #000;
+}

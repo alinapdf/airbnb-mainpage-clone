@@ -1,0 +1,21 @@
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 6px 6px 13px;
+
+  border: 1px solid #ddd;
+  border-radius: 21px;
+  height: 42px;
+  background-color: #fff;
+}
+
+.account__nav-icon {
+  display: flex;
+  align-items: center;
+}
+
+.account__avatar {
+  display: flex;
+  align-items: center;
+}

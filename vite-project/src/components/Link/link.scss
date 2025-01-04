@@ -1,0 +1,20 @@
+a.link {
+  padding: 0 20px;
+  font: 24px;
+
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: var(--textColor);
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &--light {
+    font-weight: 400;
+    color: #717171;
+  }
+}
