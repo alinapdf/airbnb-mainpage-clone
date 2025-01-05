@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./filterprice.scss";
 
-const FilterPrice = () => {
+const FilterPrice = ({ isFilterActive, setIsFilterActive }) => {
   const [isBtnActive, setIsBtnActive] = useState(false);
   const [activeId, setActiveId] = useState("totalPrice");
 
   const handleButtonClick = () => {
     setIsBtnActive((prevState) => !prevState);
     setActiveId(isBtnActive ? "totalPrice" : "totalPriceIncluded");
+
+    setIsFilterActive((prev) => !prev);
   };
 
   return (

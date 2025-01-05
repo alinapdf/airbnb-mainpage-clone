@@ -1,12 +1,15 @@
 import Card from "./Card/Card";
 import cardsData from "./../data/data.json";
 
-const Main = () => {
+const Main = ({ isFilterActive }) => {
+  const filteredData = cardsData.filter((card) => {
+    return isFilterActive ? card.price_per_night > 300 : true;
+  });
   return (
     <main className="main">
       <div className="container">
         <div className="main__cards">
-          {cardsData.map((card, index) => {
+          {filteredData.map((card, index) => {
             return (
               <Card
                 key={index}
